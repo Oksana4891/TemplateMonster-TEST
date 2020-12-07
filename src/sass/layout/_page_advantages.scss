@@ -1,0 +1,38 @@
+.advantages {
+  background-color: #f34235;
+  color: $addition-text-color;
+  position: relative;
+  z-index: 20;
+
+  &_title,
+  &_item--title {
+    color: $addition-text-color;
+  }
+
+  &_list {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  &_item {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 90px;
+  }
+}
+
+.advantages_item--number {
+  margin: 0 auto;  
+  font-size: 45px;
+  line-height: 90px;
+  color: #f34235;
+  font-weight: 700;
+  font-family: 'Lato';
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: $addition-text-color;
+  margin-bottom: 20px;
+}

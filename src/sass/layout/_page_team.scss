@@ -1,0 +1,32 @@
+.team {
+  &_card {
+    text-align: center;
+    padding-top: 60px;
+
+    &--photo {
+      margin: 0 auto;
+      width: 200px;
+      border-radius: 100px;
+      @media screen and (max-width: 992px) {
+        width: 150px;
+       }
+    }
+
+    &--name {
+      padding-top: 20px;
+    }
+
+    &--position {
+      font-size: 16px;
+      line-height: 34px;
+      color: #5dbdfe;
+      font-weight: 900;
+      font-family: 'Lato';
+      text-align: center;
+    }
+    
+    &--text {
+      padding-top: 0;
+    }
+  }
+}

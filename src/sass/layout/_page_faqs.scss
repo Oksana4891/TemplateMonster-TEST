@@ -1,0 +1,68 @@
+.faqs {
+  background: url(../images/bg-faqs.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 750px;
+
+  &_list {
+    padding-top: 60px;
+  }
+
+  &_item {
+    color: $addition-text-color;
+    background-color: $background-color;
+    margin-bottom: 20px;
+
+    &--title {
+      color: $addition-text-color;
+    }
+
+    &--block {
+      height: 76px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 27px;
+    }
+
+    &--btn {
+      flex-shrink: 0;
+      position: relative;
+      text-align: center;
+      background-color: $addition-text-color;
+      width: 31px;
+      height: 31px;
+      border-radius: 50%;
+      font-size: 24px;
+      line-height: 24px;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  }
+}
+
+.faqs_item--btn::after {
+  position: absolute;
+  content: '\002B';
+  color: #f34135;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.faqs_item--text {
+  text-align: justify;
+  display: none;
+  transform-origin: 0 0;
+  transition: all 1s ease-in-out 1s;
+  padding: 5px 27px 25px;
+}
+
+.faqs_item--text.active {
+  display: block;
+}
+
+.faqs_item--btn.open::after {
+  content: '\2212';
+}

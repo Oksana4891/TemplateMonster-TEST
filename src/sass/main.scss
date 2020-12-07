@@ -1,0 +1,32 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+// @import '../../node_modules/bootstrap-scss/bootstrap.scss';
+
+@import './helpers/variables';
+@import 'normalize.scss';
+@import 'material-icons.scss';
+@import 'base.scss';
+
+/* Components */
+@import './components/text';
+@import './components/title';
+@import './components/form';
+@import './components/list';
+
+/* Layout */
+@import './layout/page-header';
+@import './layout/page-banner';
+@import './layout/page-about-us';
+@import './layout/page-features';
+@import './layout/page_advantages';
+@import './layout/page_testimonials';
+@import './layout/page_team';
+@import './layout/page_faqs';
+@import './layout/page_video';
+@import './layout/slick_slider';
+@import './layout/page_blog';
+@import './layout/page_partner';
+@import './layout/footer';
+

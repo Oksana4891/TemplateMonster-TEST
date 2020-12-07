@@ -1,0 +1,19 @@
+.banner {
+  padding-bottom: 191px;
+  &_title {
+    margin-top: 171px;
+    @media screen and (max-width: 992px) {
+      margin-top: 140px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: 90px;
+    }
+    & span {
+      padding-top: 20px;
+    }
+  }
+
+  &_form {
+    margin-top: 130px;
+  }
+}
