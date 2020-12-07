@@ -68,6 +68,14 @@ window.onload = function () {
 
         btns.forEach((btn, i) => {
             btn.addEventListener('click', function () {
+                btns.forEach((item, i)=> {
+                    if(item.classList.contains('open') && item!=btn){
+
+                        item.classList.remove('open');
+                        block[i].classList.remove('active');
+                    }
+                });
+
                 btn.classList.toggle('open');
                 block[i].classList.toggle('active');
             }
@@ -149,7 +157,7 @@ window.onload = function () {
                 distX = mousePos.x - centerX,
                 distY = mousePos.y - centerY;
             if (Math.abs(distX) < 500 && distY < 200) {
-                parallaxesElement.style.transform = "translate(" + (-1 * distX) / 12 + "px," + (-1 * distY) / 12 + "px)";
+                parallaxesElement.style.transform = "translate(" + (-1 * distX) / 12 + "px," + (1 * distY) / 30 + "px)";
             }
         });
     }
@@ -174,12 +182,11 @@ window.onload = function () {
 
         window.addEventListener('scroll', () => {
             if (document.documentElement.scrollTop > document.documentElement.clientHeight) {
-                upElem.classList.add("is-active");
-                console.log("rere")
+                upElem.classList.add("is-active")
             }
+
             else {
-                console.log("ee")
-                upElem.classList.remove("is-active");
+                upElem.classList.remove("is-active")
             }
         });
     }
