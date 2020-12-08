@@ -15,6 +15,11 @@
 
     &--title {
       color: $addition-text-color;
+      width: 80%;
+      @media screen and (max-width: 576px) {
+        font-size: 13px;
+      }
+
     }
 
     &--block {
@@ -57,6 +62,7 @@
   transform-origin: 0 0;
   transition: all 1s ease-in-out 1s;
   padding: 5px 27px 25px;
+  color: $addition-text-color;
 }
 
 .faqs_item--text.active {
